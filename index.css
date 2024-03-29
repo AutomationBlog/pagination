@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 600px;
+  padding: 30px;
+
+}
+.pagination{
+  display: inline;
+  margin-left: 70px;
+  align-items: center;
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr,
+table tfoot tr {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+table tbody tr {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+table tr>th {
+  text-align: center;
+}
+
+table tr>th,
+tr>td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  cursor: pointer;
+
+}
+   .pageButton {
+    border: 1px solid black;
+    padding: 2px;
+  }
+   .clickPageNumber {
+    background-color: lightgrey;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+   .pagination-block {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+   .pagination-block span {
+    display: inline-block;
+  }
+  .pagination-block .pageButton {
+    background-color: grey;
+    color: white;
+  }
+   .pagination-block span:hover {
+    cursor: pointer;
+  }
+   .opacity {
+    opacity: 0.5;
+  }
+ @media only screen and (max-width: 600px) {
+   .grid-container {
+    table > tfoot {
+        margin-left: 5px;
+        display: inline;
+      }
+   }
+ }
